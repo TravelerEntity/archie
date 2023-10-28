@@ -4,25 +4,26 @@ body {
 }
 
 ::-moz-selection {
-  background: blue;
+  background: var(--darkBlue);
   color: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: red;
+  background: var(--darkBlue);
   color: #fff;
   text-shadow: none;
 }
 
 hr {
-  border-top: 3px dotted blue;
+  border-top: 3px dotted var(--darkBlue);
 }
 code {
-  background-color: lightblue;
-  color: black;
+  background-color: #120a1e;
+  color: #ebe6de;
   text-decoration: bold;
-  padding: 0.1em 0.2em;
+  padding: 0.2em 0.3em;
+  border-radius: 2px;
 }
 pre {
   background-color: #272822;
@@ -31,7 +32,7 @@ pre {
   padding: 1em;
 }
 blockquote {
-  border-color: blue;
+  border-color: var(--darkBlue);
 }
 
 h1,
@@ -68,7 +69,7 @@ h6::before {
 }
 
 a {
-  border-bottom: 3px solid var(--darkMaincolor);
+  border-bottom: 2px solid var(--darkMaincolor);
   color: inherit;
 }
 a:hover {
@@ -109,7 +110,7 @@ a:hover {
 }
 .draft-label {
   color: var(--darkMaincolor);
-  background-color: blue;
+  background-color: var(--darkBlue);
 }
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {
@@ -133,12 +134,12 @@ a:hover {
 .highlight pre code[class*='language-json']::before{
   content: 'json';
   background: dodgerblue;
-   color: #000000 
+  color: #000000
 }
 .highlight pre code[class*='language-python']::before,
 .highlight pre code[class*='language-py']::before {
   content: 'py';
-  background: blue;
+  background: var(--darkBlue);
   color: yellow ;
 }
 .highlight pre code[class*='language-css']::before{
