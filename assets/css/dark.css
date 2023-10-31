@@ -4,14 +4,14 @@ body {
 }
 
 ::-moz-selection {
-  background: var(--darkBlue);
-  color: #fff;
+  background: var(--darkMaincolor);
+  color: black;
   text-shadow: none;
 }
 
 ::selection {
-  background: var(--darkBlue);
-  color: #fff;
+  background: var(--darkMaincolor);
+  color: black;
   text-shadow: none;
 }
 
@@ -69,12 +69,15 @@ h6::before {
 }
 
 a {
-  border-bottom: 2px solid var(--darkMaincolor);
-  color: inherit;
+  color: rgb(235, 227, 227);
 }
 a:hover {
-  background-color: var(--darkMaincolor);
   color: black;
+}
+a:not(.soc)::before{
+  /* make underline go down little when dark🫡 */
+  bottom: 0px;
+  background-color: var(--darkMaincolor);
 }
 
 .site-description a {
